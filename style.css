@@ -1,0 +1,947 @@
+* {
+    scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mobil {
+    display: none;
+}
+
+header div {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu li {
+    list-style: none;
+    padding: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu li a {
+    color: #ffa31a;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #ffffff;
+}
+
+.menu.open {
+    height: 240px;
+}
+
+header {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: none;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid rgb(53, 53, 53);
+    height: 70px;
+}
+
+header .toggle_btn {
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul a {
+    color: 	#ffa31a;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    height: 70px;
+    width: 120px;
+}
+
+nav ul a:hover {
+    color: #ffffff;
+}
+
+.logo {
+    position: relative;
+    height: 50px;
+    margin-left: 20px; 
+}
+
+.flex-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+}
+
+#profile{
+    margin: 0 40px;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+#hero{
+    padding-top: 70px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: 	#36454f;
+    flex-direction: column;
+}
+
+.hero1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.name{
+    text-align: start;
+}
+
+.disc{
+    text-align: start;
+}
+
+#pics{
+    height: 400px;
+    width: 300px;
+    border-radius: 20%;
+}
+
+#about{
+    height: 100vh;
+    background-color:	#555d50;
+    padding-bottom: 80px;
+}
+
+.bottom{
+    display: flex;
+}
+
+.abouts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.pics{
+    padding: 30px;
+}
+
+.top{
+    padding: 20px;
+    padding-top: 80px;
+}
+
+#mpic{
+    height: 400px;
+    width: 350px;
+}
+
+#mcal{
+    height: 400px;
+    width: 250px;
+}
+
+#pres{
+    height: 400px;
+    width: 350px;
+}
+
+#projects{
+    height: auto;
+    background-color: #36454f;
+}
+
+.pbot{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 70px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pbutton{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ptop{
+    padding: 20px;
+    padding-top: 70px;
+}
+
+#contacts{
+    background-color: #4b3621;
+    height: auto;
+}
+
+.ctop{
+    padding: 20px;
+    padding-top: 70px;
+}
+
+#cpic{
+    padding: 20px;
+    height: 500px;
+    border-radius: 20%;
+}
+
+.cbot{
+    padding-bottom: 70px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ccontents{
+    padding: 50px;
+}
+
+.ccontents p{
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.ccontents a{
+    color: #ffffff;
+    font-style: italic;
+}
+
+#footer{
+    background-color: #36454f;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fa-brands{
+    padding: 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.fa-solid{
+    padding: 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#footer .icons a i:hover{
+    transition: all .5s;
+    transform: translateY(50);
+    scale: 2;
+}
+
+#fstyle1{
+    font-style: italic;
+    color: #0a0a0a;
+}
+
+#fstyle2{
+    color: #ffffff;
+    font-style: italic;
+}
+
+.big{
+    font-size: 50px; 
+    color: 	#ffa31a;
+}
+
+.small{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.big2{
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.pfont{
+    font-size: 20px;
+}
+
+.bstyle{
+    padding: 8px 16px;
+    margin-right: 10px; 
+    font-size: 20px;
+    font-weight:bold;
+    background-color: #ffa31a;
+}
+
+
+@media (min-width:2500px) {
+    #profile{
+        height: 800px;
+        width: 800px;
+    }
+
+    .big{
+        font-size: 100px;
+    }
+
+    .small{
+        font-size: 70px;
+    }
+
+    .big2{
+        font-size: 60px;
+    }
+
+    .top{
+        font-size: 30px;
+    }
+
+    #pics{
+        height: 800px;
+        width: 600px;
+        margin-bottom: 100px;
+    }
+    .abouts{
+        font-size: 50px;
+    }
+
+    .bottom{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .ptop{
+        font-size: 30px;
+    }
+
+    #mpic{
+        height: 770px;
+        width: 600px;
+    }
+
+    #mcal{
+        height: 770px;
+        width: 600px;
+    }
+
+    #pres{
+        height: 770px;
+        width: 600px;
+    }
+
+    .pfont{
+        font-size: 30px;
+    }
+
+    .bstyle{
+        font-size: 40px;
+    }
+
+    .ctop{
+        font-size: 30px;
+    }
+
+    #cpic{
+        height: 800px;
+    }
+
+    .fa-brands{
+        font-size: 60px;
+    }
+
+    .fa-solid{
+        font-size: 60px;
+    }
+
+    #cfonts{
+        font-size: 80px;
+    }
+
+    #fstyle1{
+        font-size: 50px;
+    }
+
+    #fstyle2{
+        font-size: 50px;
+    }
+}
+
+
+@media (min-width:2000px) {
+    #projects {
+        height: 100vh;
+    }
+
+    #contacts {
+        height: 100vh;
+    }
+    #profile{
+        height: 800px;
+        width: 800px;
+    }
+
+    .big{
+        font-size: 80px;
+    }
+
+    .small{
+        font-size: 40px;
+    }
+
+    .big2{
+        font-size: 40px;
+    }
+
+    .top{
+        font-size: 30px;
+    }
+
+    #pics{
+        height: 700px;
+        width: 500px;
+        margin-bottom: 80px;
+    }
+    .abouts{
+        font-size: 45px;
+    }
+
+    .bottom{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .ptop{
+        font-size: 30px;
+    }
+
+    #mpic{
+        height: 770px;
+        width: 600px;
+    }
+
+    #mcal{
+        height: 770px;
+        width: 600px;
+    }
+
+    #pres{
+        height: 770px;
+        width: 600px;
+    }
+
+    .pfont{
+        font-size: 30px;
+    }
+
+    .bstyle{
+        font-size: 40px;
+        
+    }
+
+    .ctop{
+        font-size: 30px;
+    }
+
+    #cpic{
+        height: 800px;
+    }
+
+    .fa-brands{
+        font-size: 40px;
+    }
+
+    .fa-solid{
+        font-size: 40px;
+    }
+
+    #cfonts{
+        font-size: 60px;
+    }
+
+    #fstyle1{
+        font-size: 40px;
+    }
+
+    #fstyle2{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width:1400px) {
+    #projects {
+        height: 100vh;
+    }
+    #contacts {
+        height: 100vh;
+    }
+}
+
+@media (min-width:1500px) {
+    #profile{
+        height: 600px;
+        width: 600px;
+    }
+
+    .big{
+        font-size: 60px;
+    }
+
+    .small{
+        font-size: 40px;
+    }
+
+    .big2{
+        font-size: 30px;
+    }
+
+    .top{
+        font-size: 20px;
+    }
+
+    #pics{
+        height: 450px;
+        width: 300px;
+        margin-bottom: 100px;
+    }
+    .abouts{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .bottom{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .ptop{
+        font-size: 20px;
+    }
+
+    #mpic{
+        height: 500px;
+        width: 400px;
+    }
+
+    #mcal{
+        height: 500px;
+        width: 400px;
+    }
+
+    #pres{
+        height: 500px;
+        width: 400px;
+    }
+
+    .pfont{
+        font-size: 30px;
+    }
+
+    .bstyle{
+        font-size: 30px;
+    }
+
+    .ctop{
+        font-size: 20px;
+    }
+
+    #cpic{
+        height: 500px;
+    }
+
+    .fa-brands{
+        font-size: 30px;
+    }
+
+    .fa-solid{
+        font-size: 30px;
+    }
+
+    #cfonts{
+        font-size: 40px;
+    }
+
+    #fstyle1{
+        font-size: 30px;
+    }
+
+    #fstyle2{
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width:1100px) {
+    .fa-brands{
+        font-size: 25px;
+    }
+
+    .fa-solid{
+        font-size: 25px;
+    }
+
+    #cfonts{
+        font-size: 23px;
+    }
+}
+@media (max-width:1300px){
+    #about{
+        height: auto;
+    }
+
+    .abouts {
+        padding: 0 80px;
+    }
+    
+    #projects {
+        height: auto;
+    }
+
+    #contacts{
+        height: auto;
+    }
+}
+
+@media (max-width:1000px) {
+    #projects{
+        height: auto;
+    }
+
+    .mainav{
+        padding: 0;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    header .toggle_btn {
+        display: block;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    #profile{
+        height: 400px;
+        width: 400px;
+    }
+
+    .big{
+        font-size: 40px;
+    }
+
+    .small{
+        font-size: 20px;
+    }
+
+    .big2{
+        font-size: 20px;
+    }
+
+    .top{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #pics{
+        height: 400px;
+        width: 300px;
+        margin-bottom: 100px;
+    }
+    .abouts{
+        padding: 0 30px;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .bottom{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .ptop{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #mpic{
+        height: 500px;
+        width: 600px;
+    }
+
+    #mcal{
+        height: 500px;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    #pres{
+        height: 500px;
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .pfont{
+        font-size: 30px;
+    }
+
+    .bstyle{
+        font-size: 30px;
+    }
+
+    .pbot{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacts{
+        height: auto;
+    }
+
+    .ctop{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .cbot{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #cpic{
+        height: 500px;
+    }
+
+    .fa-brands{
+        font-size: 20px;
+    }
+
+    .fa-solid{
+        font-size: 20px;
+    }
+
+    #cfonts{
+        font-size: 30px;
+    }
+
+    #fstyle1{
+        font-size: 30px;
+    }
+
+    #fstyle2{
+        font-size: 30px;
+    }
+}
+@media (max-width:710px) {
+    #profile{
+        height: 250px;
+        width: 250px;
+    }
+
+    .name {
+        margin-right: 100px;
+    }
+
+    .lapi{
+        display: none;
+    }
+
+    .mobil{
+        display: block;
+    }
+
+    #pics{
+        margin: 0;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+
+    }
+    .abouts{
+        padding: 0 30px;
+        font-size: 22px;
+        text-align: center;
+
+    }
+
+    .bottom {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    #mpic{
+        height: 500px;
+        width: 380px;
+    }
+
+    #mcal{
+        height: 500px;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    #pres{
+        height: 500px;
+        width: 380px;
+        margin-top: 20px;
+    }
+
+    .pfont{
+        font-size: 16px;
+    }
+
+    .bstyle{
+        padding: 8px 16px;
+        margin-right: 10px;  
+        font-size: 16px;
+    }
+}
+ 
+@media (max-width:550px) {
+    #profile {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .abouts{
+        padding: 0 30px;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    #cpic {
+        height: 250px;
+    }
+
+    .fa-brands{
+        font-size: 16px;
+    }
+
+    .fa-solid{
+        font-size: 16px;
+    }
+
+    #cfonts{
+        font-size: 20px;
+    }
+
+    #fstyle1{
+        font-size: 20px;
+    }
+
+    #fstyle2{
+        font-size: 20px;
+    }
+
+    #footer{
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .name {
+        margin-right: 40px;
+    }
+
+    .abouts {
+        font-size: 18px;
+    }
+
+    #mpic{
+        height: 300px;
+        width: 250px;
+    }
+
+    #mcal{
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    #pres{
+        height: 300px;
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .pfont{
+        font-size: 18px;
+    }
+
+    .bstyle{
+        font-size: 18px;
+    }
+
+    #cfonts{
+        font-size: 14px;
+    }
+
+    #fstyle1{
+        font-size: 20px;
+    }
+
+    #fstyle2{
+        font-size: 20px;
+    }
+}
